@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Template</title>
+    <!-- Підключення стилів Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Підключення шрифтів Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Підключення додаткових стилів -->
+    <style>
+        .jumbotron {
+            background-image: url('https://t3.ftcdn.net/jpg/06/09/57/28/240_F_609572800_4C0CyViJVnUjcavg9PZtGTKbgMKugqDM.jpg');
+            background-size: cover;
+            color: #2d2d2d;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .icon-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .icon-section i {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .carousel-item {
+            height: 400px;
+            background-color: #f8f8f8;
+        }
+
+        .carousel-item img {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #4f85e9;
+            color: aliceblue;
+            font-size: 20px;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Навбар -->
+    <nav style="background-color: rgb(61, 119, 219); height: 60px;" class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a style="font-size: 50px; color: aliceblue;" class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a style="color: aliceblue; font-size: 20px;" href="#">Головна</a></li>
+                    <li><a style="color: aliceblue; font-size: 20px;"a href="#">Про нас</a></li>
+                    <li><a style="color: aliceblue; font-size: 20px;"a href="#">Послуги</a></li>
+                    <li><a style="color: aliceblue; font-size: 20px;"a href="#">Контакти</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a a style="font-size: 20px; color: aliceblue;" href="#"><i class="fa fa-user"></i> Увійти</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Ласкаво просимо!</h1>
+            <p>Для більш детального ознайомлення клікайте на "Дізнатися більше"</p>
+            <a href="#" class="btn btn-primary btn-lg">Дізнатися більше</a>
+        </div>
+    </div>
+
+    <!-- Карусель -->
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img style="width: 1500px;" src="https://as2.ftcdn.net/v2/jpg/05/96/61/19/1000_F_596611942_pa5D9PvSSUoenznyo6Ggq3WxAYSEeg6o.jpg" alt="Slide 1">
+                <div class="carousel-caption">
+                    
+                </div>
+            </div>
+            <div class="item">
+                <img style="width: 1500px;"  src="https://as2.ftcdn.net/v2/jpg/06/15/28/75/1000_F_615287542_bTHV9dxeUksyJfNf2zqGChXsYXORI2Iv.jpg" alt="Slide 2">
+                <div class="carousel-caption">
+                   
+                </div>
+            </div>
+            <div class="item">
+                <img style="width: 1500px;"  src="https://as1.ftcdn.net/v2/jpg/06/13/57/40/1000_F_613574014_WwO7kvkWxOaVeUeoTNdYzYpjCGtTb5wf.jpg" alt="Slide 3">
+                <div class="carousel-caption">
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+
+    <!-- Контент -->
+    <div class="container">
+        <div class="row">
+          
+            <div style="padding-top: 20px;" class="col-md-6">
+                <!-- Картка 1 -->
+                <div class="card">
+                    <img style="width: 500px; height: 400px;" src="https://images.pexels.com/photos/1049298/pexels-photo-1049298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"> 
+                    <div class="card-body">
+                        <h5 style="text-align: center; font-size: 40px;" class="card-title">Пляж</h5>
+                        <p style="font-size: 20px;" class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nesciunt adipisci itaque laudantium eius iusto unde sit omnis similique mollitia deserunt tempore fugit distinctio illo provident quisquam illum, fuga quas.
+                        Tenetur laboriosam modi id tempora eveniet, doloremque aut assumenda vitae libero suscipit, blanditiis voluptas qui officia expedita. Aspernatur blanditiis voluptate cupiditate placeat, quo ut architecto delectus, recusandae necessitatibus reiciendis asperiores.</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col-md-6">
+                <!-- Картка 1 -->
+                <div class="card">
+                    <img style="width: 500px; height: 400px;" src="https://as1.ftcdn.net/v2/jpg/06/00/97/50/1000_F_600975085_fm9Hl1MGGNzK8yx0gGAlKc61VJRdD3VO.jpg"> 
+                    <div class="card-body">
+                        <h5 style="text-align: center; font-size: 40px;" class="card-title">Краєвид</h5>
+                        <p style="font-size: 20px;" class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nesciunt adipisci itaque laudantium eius iusto unde sit omnis similique mollitia deserunt tempore fugit distinctio illo provident quisquam illum, fuga quas.
+                        Tenetur laboriosam modi id tempora eveniet, doloremque aut assumenda vitae libero suscipit, blanditiis voluptas qui officia expedita. Aspernatur blanditiis voluptate cupiditate placeat, quo ut architecto delectus, recusandae necessitatibus reiciendis asperiores.</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="padding-top: 20px;" class="col-md-6">
+                <!-- Картка 1 -->
+                <div class="card">
+                    <img style="width: 500px; height: 400px;" src="https://t4.ftcdn.net/jpg/06/13/24/65/240_F_613246570_mf0IOREccEWxOx4vvFOWLitSUpCFh4t8.jpg"> 
+                    <div class="card-body">
+                        <h5 style="text-align: center; font-size: 40px;" class="card-title">Місто</h5>
+                        <p style="font-size: 20px;" class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nesciunt adipisci itaque laudantium eius iusto unde sit omnis similique mollitia deserunt tempore fugit distinctio illo provident quisquam illum, fuga quas.
+                        Tenetur laboriosam modi id tempora eveniet, doloremque aut assumenda vitae libero suscipit, blanditiis voluptas qui officia expedita. Aspernatur blanditiis voluptate cupiditate placeat, quo ut architecto delectus, recusandae necessitatibus reiciendis asperiores.</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="padding-top: 20px;" class="col-md-6">
+                <!-- Картка 2 -->
+                <div class="card">
+                    <img style="width: 500px; height: 400px;" src="https://t4.ftcdn.net/jpg/06/12/49/67/240_F_612496704_veh5JYR830NJpHEwnGUMU6Tg3Mg15wsZ.jpg" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <h5 style="text-align: center; font-size: 40px;" class="card-title">Готельний номер</h5>
+                        <p style="font-size: 20px;" class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio quo officiis natus, magni at nostrum cumque vitae deleniti rerum quae deserunt corporis facilis, laborum doloribus esse eos, ad molestiae debitis.
+                        Laudantium pariatur voluptatibus consequatur. Architecto amet dolorum quia debitis, eaque vero. Illo, nulla reprehenderit explicabo doloremque in, suscipit expedita, accusamus perspiciatis quod voluptates earum nostrum consectetur non harum nihil optio?</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br>
+<h1 style="text-align: center; font-size: 70px; font-family: cursive; padding-bottom: 30px;">Фото з відпочинку</h1>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <img style="width: 400px; height: 300px;"  src="https://as2.ftcdn.net/v2/jpg/06/14/21/93/1000_F_614219338_llqOgus9uuBPXw1LiLRpYIdKVoErS0pZ.jpg" alt="Image 1" class="img-responsive">
+              </div>
+              <div class="col-md-4">
+                <img style="width: 400px; height: 300px;"  src="https://t4.ftcdn.net/jpg/06/09/79/25/240_F_609792584_9MB3PzmWhxrg4VEOdrPJNyCNwkK0HsN6.jpg" alt="Image 2" class="img-responsive">
+              </div>
+              <div class="col-md-4">
+                <img style="width: 400px; height: 300px;"  src="https://t4.ftcdn.net/jpg/06/01/32/87/240_F_601328754_G28wyzC7OnOGHdhw746tDxOqZemYOksA.jpg" alt="Image 3" class="img-responsive">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <img style="width: 400px; height: 300px;"  src="https://t3.ftcdn.net/jpg/06/01/34/62/240_F_601346283_OSMcNLJuTzQUs1zYsu0Rezf8WTKTnU8A.jpg" alt="Image 4" class="img-responsive">
+              </div>
+              <div class="col-md-4">
+                <img style="width: 400px; height: 300px;"  src="https://t3.ftcdn.net/jpg/06/14/75/94/240_F_614759429_36ZCEaexLJFIiGips1TVgJ9unNDLopWy.jpg" alt="Image 5" class="img-responsive">
+              </div>
+              <div class="col-md-4">
+                <img style="width: 400px; height: 300px;"  src="https://t3.ftcdn.net/jpg/05/98/66/54/240_F_598665457_GuvlB0YctZ3RRC3GobBchR37i23nZW8Q.jpg" alt="Image 6" class="img-responsive">
+              </div>
+            </div>
+          </div>
+          
+<br>
+        <!-- Іконки та текст -->
+        <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 50px; font-family: cursive;">Про нас</h1>
+        <div style="padding-top: 70px;" class="row icon-section">
+            <div class="col-md-4">
+                <i class="fa fa-rocket"></i>
+                <h4>Швидкість оформлення</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus natus impedit laborum reiciendis recusandae corporis iusto voluptatem inventore eligendi exercitationem. Laborum praesentium itaque voluptate, consectetur maxime excepturi suscipit? Nemo, libero?
+                Distinctio, magni. Repudiandae cum ab reprehenderit ipsam quasi expedita sint laudantium eveniet adipisci repellat ratione quis aspernatur laborum ea, autem sequi ut dicta dolorum omnis laboriosam saepe tenetur repellendus soluta?
+                Ex omnis iusto modi recusandae eligendi cum dolore ullam sunt commodi possimus, nulla rerum facilis repudiandae, eaque laboriosam quam dolorem nesciunt quibusdam ducimus enim! Labore corrupti quisquam reprehenderit sed quos?</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-cogs"></i>
+                <h4>Гарантія</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo eos esse asperiores sapiente minima nam exercitationem vero quaerat ex, inventore quos eius, magni ullam soluta dolores quibusdam ipsa saepe aperiam.
+                Consequuntur dolorem quia minima, fugit dicta, recusandae non totam dolor architecto obcaecati repellendus minus? Tempora quae pariatur sed consequuntur, rerum hic culpa modi velit soluta aspernatur iste veniam numquam eius!
+                At obcaecati culpa dicta delectus animi in velit voluptas, debitis fugiat vitae rerum asperiores illo! Vero eum iusto facere quidem? Laboriosam eos debitis error iste neque, porro corporis veniam consequuntur!</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-mobile"></i>
+                <h4>Завжди на зв'язку</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt quis unde ullam, dolore, et vero ex at veniam iure maxime, iusto labore saepe nemo cumque consequuntur maiores nesciunt commodi?
+                Voluptatum sunt perferendis cum illum illo fugit debitis cumque natus dolore, quidem neque est dolorem quia, dolorum harum deleniti ea. Labore sint exercitationem hic eos aut aliquam vitae optio laudantium.
+                Eum ut rem ullam hic amet quod dolore. Molestias, earum? Neque cupiditate quibusdam natus doloremque nemo aspernatur esse animi vero molestiae optio recusandae repellendus maiores ut tempora dolor, mollitia ea?</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>Всі права захищені &copy; 2023</p>
+        </div>
+    </footer>
+
+    <!-- Підключення скриптів Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
